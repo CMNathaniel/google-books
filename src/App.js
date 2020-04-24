@@ -10,13 +10,14 @@ export default class App extends Component {
       searchTerm: "",
       printType: "",
       bookType: ""
-    }
+    };
   }
+  
   render() {
   return (
     <div className="App">
-      <UserInput />
-      <ResultList />
+      <UserInput searchTerm={this.state.searchTerm} printType={this.state.printType} bookType={this.state.bookType}/>
+      <ResultList searchTerm={this.state.searchTerm} printType={this.state.printType} bookType={this.state.bookType}/>
     </div>
   );
  }
