@@ -16,7 +16,7 @@ export default class UserInput extends Component {
                     </select>
                 </form>
             </div>
-        )
+        );
     }
 }
 

@@ -1,17 +1,14 @@
 import React, { Component } from "React";
-import "./index.css";
-import UserInput from "./UserInput";
-import Resultlist from "./ResultList";
 
-export default class App extends Component {
+export default class SearchResult extends Component {
  render() {
     return (
-        <div className="App">
-            <UserInput />
-            <ResultList />
+        <div className="SearchResult">
+            <h2>Book Title</h2>
+            <p>Author</p>
+            <p>Price</p>
+            <p>Description</p>
         </div>
-    )
-
- }
-
+    );
+  }
 }
